@@ -26,6 +26,9 @@ class XylophoneApp extends StatelessWidget {
                   },
                 ),
               ),
+              SizedBox(
+                height: 10,
+              ),
               Expanded(
                 child: FlatButton(
                   color: Colors.teal,
@@ -33,6 +36,9 @@ class XylophoneApp extends StatelessWidget {
                     playsound(2);
                   },
                 ),
+              ),
+              SizedBox(
+                height: 10,
               ),
               Expanded(
                 child: FlatButton(
@@ -42,6 +48,9 @@ class XylophoneApp extends StatelessWidget {
                   },
                 ),
               ),
+              SizedBox(
+                height: 10,
+              ),
               Expanded(
                 child: FlatButton(
                   color: Colors.orange[700],
@@ -49,6 +58,9 @@ class XylophoneApp extends StatelessWidget {
                     playsound(4);
                   },
                 ),
+              ),
+              SizedBox(
+                height: 10,
               ),
               Expanded(
                 child: FlatButton(
@@ -58,6 +70,9 @@ class XylophoneApp extends StatelessWidget {
                   },
                 ),
               ),
+              SizedBox(
+                height: 10,
+              ),
               Expanded(
                 child: FlatButton(
                   color: Colors.blueAccent[700],
@@ -65,6 +80,9 @@ class XylophoneApp extends StatelessWidget {
                     playsound(6);
                   },
                 ),
+              ),
+              SizedBox(
+                height: 10,
               ),
               Expanded(
                 child: FlatButton(
