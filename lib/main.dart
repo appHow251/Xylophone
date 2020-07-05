@@ -4,6 +4,11 @@ import 'package:audioplayers/audio_cache.dart';
 void main() => runApp(XylophoneApp());
 
 class XylophoneApp extends StatelessWidget {
+  void playsound(int soundNumber) {
+    final player = AudioCache();
+    player.play('note$soundNumber.wav');
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,50 +19,43 @@ class XylophoneApp extends StatelessWidget {
               FlatButton(
                 color: Colors.red[900],
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note1.wav');
+                  playsound(1);
                 },
               ),
               FlatButton(
                 color: Colors.teal,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note2.wav');
+                  playsound(2);
                 },
               ),
               FlatButton(
                 color: Colors.yellow[700],
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note3.wav');
+                  playsound(3);
                 },
               ),
               FlatButton(
                 color: Colors.orange[700],
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note4.wav');
+                  playsound(4);
                 },
               ),
               FlatButton(
                 color: Colors.deepPurple[300],
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note5.wav');
+                  playsound(5);
                 },
               ),
               FlatButton(
                 color: Colors.blueAccent[700],
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note6.wav');
+                  playsound(6);
                 },
               ),
               FlatButton(
                 color: Colors.pink[300],
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note7.wav');
+                  playsound(7);
                 },
               ),
             ],
